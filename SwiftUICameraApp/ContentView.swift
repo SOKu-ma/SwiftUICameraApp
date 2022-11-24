@@ -11,50 +11,61 @@ struct ContentView: View {
     
     @ObservedObject var vm = ContentViewModel()
     
-    @State var navigateTo: AnyView?
-    
     var body: some View {
         NavigationView {
             VStack {
                 Button(action: {
-                    
+                    print("カメラ起動")
+                    vm.btnCameraTapped()
                 },label: {
                     Image(systemName: "camera")
                         .imageScale(.large)
                         .foregroundColor(.accentColor)
                     
-                }).sheet(isPresented: $vm.isShowCamera) {
+                }).fullScreenCover(isPresented: $vm.isShowCamera) {
                     ImagePickerView()
                 }
                 Text(vm.url)
                     .padding()
                 Text(vm.key)
             }
-            .navigationTitle("Camera App")
+            .navigationBarTitle("Camera App", displayMode: .inline)
             .navigationBarItems(
                 
                 trailing: Menu {
+                    
+                    // カメラ起動
                     Button(action: {
-                        // カメラ起動
-                        showCamera()
+                        print("カメラ起動")
+                        vm.btnCameraTapped()
                         
                     },label: {
                         Image(systemName: "camera")
                         Text("領収書撮影")
-                    }).sheet(isPresented: $vm.isShowCamera) {
+                    })
+                    .fullScreenCover(isPresented: $vm.isShowCamera) {
                         ImagePickerView()
+                    }
+                    
+                    // 設定
+                    VStack {
+                        Button(action: {
+                            print("設定画面に遷移")
+                            vm.btnConfigTapped()
+                        }, label: {
+                            Image(systemName: "gearshape")
+                            Text("設定")
+                        })
                     }
                 } label: {
                     Image(systemName: "ellipsis")
-                }
+                }.background(
+                    NavigationLink(destination: ConfigView(),
+                                   isActive: $vm.isShowConfig,
+                                   label: { EmptyView() })
+                )
             )
         }
-    }
-    
-    func showCamera() {
-        print("カメラ起動")
-        vm.btnCameraTapped()
-        navigateTo = AnyView(ImagePickerView())
     }
 }
 

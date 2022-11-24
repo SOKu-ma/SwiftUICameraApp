@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050D9AC2292F62F400F93768 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D9AC1292F62F400F93768 /* ConfigView.swift */; };
+		050D9AC4292F630900F93768 /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D9AC3292F630900F93768 /* ConfigViewModel.swift */; };
+		050D9AC6292F631900F93768 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D9AC5292F631900F93768 /* ImagePickerViewModel.swift */; };
+		050D9AC9292F647700F93768 /* TestConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D9AC8292F647700F93768 /* TestConfigViewModel.swift */; };
+		050D9ACB292F67FD00F93768 /* TestContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D9ACA292F67FD00F93768 /* TestContentViewModel.swift */; };
+		050D9ACD292F74AF00F93768 /* TestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D9ACC292F74AF00F93768 /* TestContentView.swift */; };
 		057D9A5B292D16CD00C5B47A /* SwiftUICameraAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D9A5A292D16CD00C5B47A /* SwiftUICameraAppApp.swift */; };
 		057D9A5D292D16CD00C5B47A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D9A5C292D16CD00C5B47A /* ContentView.swift */; };
 		057D9A5F292D16CE00C5B47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057D9A5E292D16CE00C5B47A /* Assets.xcassets */; };
 		057D9A62292D16CE00C5B47A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057D9A61292D16CE00C5B47A /* Preview Assets.xcassets */; };
-		057D9A6C292D16CE00C5B47A /* SwiftUICameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D9A6B292D16CE00C5B47A /* SwiftUICameraAppTests.swift */; };
 		057D9A76292D16CE00C5B47A /* SwiftUICameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D9A75292D16CE00C5B47A /* SwiftUICameraAppUITests.swift */; };
 		057D9A78292D16CE00C5B47A /* SwiftUICameraAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D9A77292D16CE00C5B47A /* SwiftUICameraAppUITestsLaunchTests.swift */; };
 		057D9A88292D184000C5B47A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D9A87292D184000C5B47A /* ContentViewModel.swift */; };
@@ -36,13 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050D9AC1292F62F400F93768 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		050D9AC3292F630900F93768 /* ConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
+		050D9AC5292F631900F93768 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
+		050D9AC8292F647700F93768 /* TestConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfigViewModel.swift; sourceTree = "<group>"; };
+		050D9ACA292F67FD00F93768 /* TestContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContentViewModel.swift; sourceTree = "<group>"; };
+		050D9ACC292F74AF00F93768 /* TestContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContentView.swift; sourceTree = "<group>"; };
 		057D9A57292D16CD00C5B47A /* SwiftUICameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		057D9A5A292D16CD00C5B47A /* SwiftUICameraAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICameraAppApp.swift; sourceTree = "<group>"; };
 		057D9A5C292D16CD00C5B47A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		057D9A5E292D16CE00C5B47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057D9A61292D16CE00C5B47A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		057D9A67292D16CE00C5B47A /* SwiftUICameraAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICameraAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		057D9A6B292D16CE00C5B47A /* SwiftUICameraAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICameraAppTests.swift; sourceTree = "<group>"; };
 		057D9A71292D16CE00C5B47A /* SwiftUICameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		057D9A75292D16CE00C5B47A /* SwiftUICameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICameraAppUITests.swift; sourceTree = "<group>"; };
 		057D9A77292D16CE00C5B47A /* SwiftUICameraAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICameraAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -75,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050D9AC7292F644900F93768 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				050D9AC8292F647700F93768 /* TestConfigViewModel.swift */,
+				050D9ACA292F67FD00F93768 /* TestContentViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		057D9A4E292D16CD00C5B47A = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +138,7 @@
 		057D9A6A292D16CE00C5B47A /* SwiftUICameraAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				057D9A6B292D16CE00C5B47A /* SwiftUICameraAppTests.swift */,
+				050D9AC7292F644900F93768 /* ViewModel */,
 			);
 			path = SwiftUICameraAppTests;
 			sourceTree = "<group>";
@@ -129,6 +148,7 @@
 			children = (
 				057D9A75292D16CE00C5B47A /* SwiftUICameraAppUITests.swift */,
 				057D9A77292D16CE00C5B47A /* SwiftUICameraAppUITestsLaunchTests.swift */,
+				050D9ACC292F74AF00F93768 /* TestContentView.swift */,
 			);
 			path = SwiftUICameraAppUITests;
 			sourceTree = "<group>";
@@ -137,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				057D9A5C292D16CD00C5B47A /* ContentView.swift */,
+				050D9AC1292F62F400F93768 /* ConfigView.swift */,
 				057D9A89292F0F5D00C5B47A /* ImagePickerView.swift */,
 			);
 			name = View;
@@ -146,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				057D9A87292D184000C5B47A /* ContentViewModel.swift */,
+				050D9AC3292F630900F93768 /* ConfigViewModel.swift */,
+				050D9AC5292F631900F93768 /* ImagePickerViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -287,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050D9AC6292F631900F93768 /* ImagePickerViewModel.swift in Sources */,
+				050D9AC4292F630900F93768 /* ConfigViewModel.swift in Sources */,
 				057D9A8A292F0F5D00C5B47A /* ImagePickerView.swift in Sources */,
+				050D9AC2292F62F400F93768 /* ConfigView.swift in Sources */,
 				057D9A5D292D16CD00C5B47A /* ContentView.swift in Sources */,
 				057D9A5B292D16CD00C5B47A /* SwiftUICameraAppApp.swift in Sources */,
 				057D9A88292D184000C5B47A /* ContentViewModel.swift in Sources */,
@@ -298,7 +324,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				057D9A6C292D16CE00C5B47A /* SwiftUICameraAppTests.swift in Sources */,
+				050D9AC9292F647700F93768 /* TestConfigViewModel.swift in Sources */,
+				050D9ACB292F67FD00F93768 /* TestContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +335,7 @@
 			files = (
 				057D9A76292D16CE00C5B47A /* SwiftUICameraAppUITests.swift in Sources */,
 				057D9A78292D16CE00C5B47A /* SwiftUICameraAppUITestsLaunchTests.swift in Sources */,
+				050D9ACD292F74AF00F93768 /* TestContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

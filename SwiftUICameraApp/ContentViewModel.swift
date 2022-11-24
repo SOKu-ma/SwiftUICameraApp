@@ -14,11 +14,17 @@ class ContentViewModel: ObservableObject {
     @Published var key: String = "KEY"
     
     @Published var isShowCamera: Bool = false
+    @Published var isShowConfig: Bool = false
     
     
     // カメラ起動ボタンタップイベント
     func btnCameraTapped() {
-        isShowCamera = !isShowCamera        
+        isShowCamera = true
+    }
+    
+    // 設定画面ボタンタップイベント
+    func btnConfigTapped() {
+        isShowConfig = true
     }
     
 }
