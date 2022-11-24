@@ -2,7 +2,7 @@
 //  SwiftUICameraAppUITests.swift
 //  SwiftUICameraAppUITests
 //
-//  Created by 太田修平 on 2022/11/22.
+//  Created by Shuhei Ota on 2022/11/22.
 //
 
 import XCTest
